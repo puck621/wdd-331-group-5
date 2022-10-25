@@ -1,0 +1,42 @@
+//Edits Purpose in HTML
+
+.cd-purpose .cd-box p::after {
+  content: "For the Zen Garden theme, we want to emphasis the industrial calmness that is inherent in an online forum promoting the Zen from CSS. To maintain this theme, we will keep a minimalistic layout and color pallet to make for a smoother read. Given the layout of the HTML, we will use background with some slight pattern but only use images as needed to differentiate between different sections. The grid layout for a larger width screen has enough features for differentiating sections but a narrower screen will use the images to break up the body and hyperlinks without disrupting flow.  This industrial calm theme with use dark gray and gray blues as dominate colors with emphasis colors of burgundy and ancient bronze. ";
+  text-indent: 0;
+  display: block;
+  line-height: initial; 
+  position: relative;/* New content takes up original line height */
+}
+
+
+//Edit Logo Pictures in HTML
+.cd-logo {
+  content: url('https://cdn.pixabay.com/photo/2016/12/07/15/59/lotus-1889764_960_720.png');
+}
+
+.cd-branding .cd-box:first-child img {
+  content: url('https://cdn.pixabay.com/photo/2016/12/07/15/59/lotus-1889764_960_720.png');
+  background-color: $color-2;
+}
+
+.cd-branding .cd-box:nth-child(2) img {
+  content: url('https://cdn.pixabay.com/photo/2016/12/07/15/59/lotus-1889764_960_720.png');
+  background-color: $color-1;
+  width: 75%;
+}
+
+//Edit Small Logo Pictures in HTML
+img[alt~="Touch Icon 1"] {
+  content: url('https://pixabay.com/vectors/lotus-flower-plant-lotus-flower-2073663/');
+  background-color: $color-1;
+  width: 25%;
+}
+
+//Edit Wireframe Pictures in HTML
+.cd-wireframes figure:first-child img {
+  content: url('https://i.ibb.co/FX2bC11/Web-1000.png');
+}
+
+.cd-wireframes figure:last-child img {
+  content: url('https://i.ibb.co/JpQzDhk/Web-1920.png');
+}
