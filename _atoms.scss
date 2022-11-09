@@ -1,3 +1,28 @@
 //Must have 5 atoms
 /* Links */
 
+
+//Heading styles
+h1 {
+  font: {
+        size: 2.5rem;
+        family: $font-sans;
+        weight: bold;
+    }
+}
+ 
+ h2 {
+    font: {
+        size: 2rem;
+        family: $font-sans;
+        weight: bold;
+    }
+}
+
+h3 {
+    font: {
+        size: 1.5rem;
+        family: $font-sans;
+        weight: bold;
+    }
+}
