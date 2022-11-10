@@ -1,1 +1,14 @@
+/* Small screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+@include breakpoint($media-min $media-med) {
 
+}
+
+
+
+
+
+
+/* Large screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+@include breakpoint($media-med $media-max){
+
+}

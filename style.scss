@@ -1,7 +1,7 @@
-@use 'atoms' as a;
-@use 'molecules' as m;
-@use 'organisms' as o;
-@use 'variables' as v;
+@use 'atoms' as atoms;
+@use 'molecules' as molecules;
+@use 'organisms' as organisms;
+@use 'variables' as variables;
 
 
 
@@ -9,17 +9,3 @@
 
 
 
-/* Small screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@include breakpoint($media-min $media-med) {
-
-}
-
-
-
-
-
-
-/* Large screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@include breakpoint($media-med $media-max){
-
-}
