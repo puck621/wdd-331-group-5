@@ -1,6 +1,27 @@
 //Must have 5 atoms
 /* Links */
+a {
+    font: {
+        family: $font-serif;
+        color: $accent-2;
+    }
+    text-decoration: none;
+}
 
+li {
+    font: {
+        family: $font-serif;
+        color: $accent-2;
+    }
+    list-style: none;
+}
+
+p {
+    font: {
+        family: $font-serif;
+    }
+
+}
 
 //Heading styles
 h1 {
@@ -26,3 +47,4 @@ h3 {
         weight: bold;
     }
 }
+

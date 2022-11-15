@@ -1,3 +1,17 @@
+* {
+    background-color: $dark-main;
+    color: $light-main;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    ::before {
+        content: '';
+        background-image: url("ZenGardenLogo2AltFont.png");
+    }
+}
+
 /* Small screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
 @include breakpoint($media-min $media-med) {
 
