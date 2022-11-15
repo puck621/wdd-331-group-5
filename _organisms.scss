@@ -1,28 +1,43 @@
-* {
-    background-color: $dark-main;
-    color: $light-main;
+// colors
+$dark-main: #214159;
+$pale-main: #BBD7F2;
+$light-main: #E4ECF1;
+$accent-1: #E9E7AF;
+$accent-2: #FCA65F;
+
+// fonts
+$font-sans: 'Varta', sans-serif;
+$font-serif: 'Vidaloka', serif;
+
+ // media query variables
+$media-min: 480px;
+$media-med: 960px;
+$media-max: 1260px;
+
+// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+@mixin small {
+    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+        @content;
+    }
 }
+@mixin medium {
+    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
+        @content;
+    }
+}
+ // positioning
+
 
 header {
     display: grid;
     grid-template-columns: 20% 80%;
-    ::before {
-        content: '';
-        background-image: url("ZenGardenLogo2AltFont.png");
     }
-}
 
-/* Small screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@include breakpoint($media-min $media-med) {
-
-}
-
-
-
-
-
-
-/* Large screen Media query - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@include breakpoint($media-med $media-max){
+#zen-intro {
+    background-image: url(/ZenGardenLogo2AltFont.png);
+    background-repeat: no-repeat;
 
 }
+
+
+

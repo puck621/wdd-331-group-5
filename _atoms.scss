@@ -1,30 +1,66 @@
 //Must have 5 atoms
+// @use 'variables' as variables;
+// colors
+$dark-main: #214159;
+$pale-main: #BBD7F2;
+$light-main: #E4ECF1;
+$accent-1: #E9E7AF;
+$accent-2: #FCA65F;
+
+// fonts
+$font-sans: 'Varta', sans-serif;
+$font-serif: 'Vidaloka', serif;
+
+ // media query variables
+$media-min: 480px;
+$media-med: 960px;
+$media-max: 1260px;
+
+// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+@mixin small {
+    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
+        @content;
+    }
+}
+
+ // positioning
+
+  body {
+     background-color: $dark-main;
+     color: $light-main;
+     max-width: 1200px;
+     margin: 0 auto;
+    }
 /* Links */
 a {
-    font: {
-        family: $font-serif;
-        color: $accent-2;
-    }
+    font-family: $font-serif;
     text-decoration: none;
 }
 
-li {
-    font: {
-        family: $font-serif;
-        color: $accent-2;
-    }
+ul {
+    font-family: $font-serif;
+    color: $accent-2;
     list-style: none;
+
 }
 
 p {
-    font: {
-        family: $font-serif;
+    font-family: $font-serif;
+    color:$light-main;
+    background-color:$dark-main;
     }
 
-}
+
 
 //Heading styles
 h1 {
+    background-color:$accent-1;
+    color:$dark-main;
   font: {
         size: 2.5rem;
         family: $font-sans;
@@ -33,6 +69,8 @@ h1 {
 }
  
  h2 {
+    background-color:$accent-1;
+    color:$dark-main;
     font: {
         size: 2rem;
         family: $font-sans;
@@ -41,6 +79,8 @@ h1 {
 }
 
 h3 {
+    background-color:$accent-1;
+    color:$dark-main;
     font: {
         size: 1.5rem;
         family: $font-sans;

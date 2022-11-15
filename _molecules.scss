@@ -1,8 +1,35 @@
-header {
-  
+// colors
+$dark-main: #214159;
+$pale-main: #BBD7F2;
+$light-main: #E4ECF1;
+$accent-1: #E9E7AF;
+$accent-2: #FCA65F;
+
+// fonts
+$font-sans: 'Varta', sans-serif;
+$font-serif: 'Vidaloka', serif;
+
+ // media query variables
+$media-min: 480px;
+$media-med: 960px;
+$media-max: 1260px;
+
+// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+
+@mixin small {
+  @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+      @content;
+  }
+}
+@mixin medium {
+  @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
+      @content;
+  }
 }
 
-body {
-    /* this is the page background */
-    background-color: $light-main;
-  }
+ // positioning
+
+// header {
+  
+// }
+

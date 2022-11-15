@@ -1,3 +1,63 @@
-/*/ Group 5: Emily Mason, Kelsey Scott, and Beth Yanez
-// WDD 331R, Fall 2022, Zen Garden*/
+/*"Add variables to that file with your chosen colors and fonts 
+(https://byui-cit.github.io/advcss/modules/req/zen-1-prove.html)."*/
+@import url("https://fonts.googleapis.com/css2?family=Varta&family=Vidaloka&display=swap");
+body {
+  background-color: #214159;
+  color: #E4ECF1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* Links */
+a {
+  font-family: "Vidaloka", serif;
+  text-decoration: none;
+}
+
+ul {
+  font-family: "Vidaloka", serif;
+  color: #FCA65F;
+  list-style: none;
+}
+
+p {
+  font-family: "Vidaloka", serif;
+  color: #E4ECF1;
+  background-color: #214159;
+}
+
+h1 {
+  background-color: #E9E7AF;
+  color: #214159;
+  font-size: 2.5rem;
+  font-family: "Varta", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  background-color: #E9E7AF;
+  color: #214159;
+  font-size: 2rem;
+  font-family: "Varta", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  background-color: #E9E7AF;
+  color: #214159;
+  font-size: 1.5rem;
+  font-family: "Varta", sans-serif;
+  font-weight: bold;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#zen-intro {
+  background-image: url(/ZenGardenLogo2AltFont.png);
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */

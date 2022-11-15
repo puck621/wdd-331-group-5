@@ -23,6 +23,22 @@ $font-serif: 'Vidaloka', serif;
 $media-min: 480px;
 $media-med: 960px;
 $media-max: 1260px;
+ 
+
+
+// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+
+@mixin small {
+    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
+        @content;
+    }
+}
+
 
  // positioning
 
