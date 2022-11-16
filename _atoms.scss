@@ -87,6 +87,12 @@ h3 {
 
 h1, h2, h3 {
     width: 100%;
-    padding: 10px;
-    box-shadow: -3px 3px 3px $accent-2;
+    margin-top: 0px;
+    font-family: "Varta", sans-serif;
+    font-size: 100px;
+    background: linear-gradient(to bottom, #e9e7af 0%, #fca65f 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }

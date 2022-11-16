@@ -9,6 +9,20 @@ $accent-2: #FCA65F;
 $font-sans: 'Varta', sans-serif;
 $font-serif: 'Vidaloka', serif;
 
+aside {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 10em;
+  left: 10px;
+  height: 100%;
+  background: #eee;
+  overflow-x: scroll;
+  padding: 8px 0;
+  font-size: 2vw;
+}
+
+
  // media query variables
 $media-min: 480px;
 $media-med: 960px;
