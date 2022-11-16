@@ -36,8 +36,13 @@ header {
 #zen-intro {
     background-image: url(/ZenGardenLogo2AltFont.png);
     background-repeat: no-repeat;
-
+    display: block;
 }
 
-
+#css-zen-garden {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: $dark-main;
+    color: $light-main;
+}
 
