@@ -17,7 +17,7 @@ p {
   font-family: "Vidaloka", serif;
   color: #214159;
   background-color: #E4ECF1;
-  padding: 10px;
+  padding: 0;
 }
 
 h1 {
@@ -57,6 +57,7 @@ h1, h2, h3 {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: -30px;
 }
 
 aside {
