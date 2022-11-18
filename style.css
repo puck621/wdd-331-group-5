@@ -90,7 +90,6 @@ header {
     color: $light-main;
 }*/
 [role=article] {
-  background-color: #E4ECF1;
   padding: 0 10px;
   margin-left: 140px;
   max-width: 960px;
