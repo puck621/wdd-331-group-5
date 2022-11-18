@@ -56,7 +56,7 @@ h1 {
     color:$dark-main;
     text-align: center;
   font: {
-        size: 2.5rem;
+        size: 3rem;
         family: $font-sans;
         weight: bold;
         
@@ -68,7 +68,7 @@ h1 {
     color:$dark-main;
     text-align: center;
     font: {
-        size: 2rem;
+        size: 2.25rem;
         family: $font-sans;
         weight: bold;
     }
@@ -89,8 +89,7 @@ h1, h2, h3 {
     width: 100%;
     margin-top: 0px;
     font-family: "Varta", sans-serif;
-    font-size: 100px;
-    background: linear-gradient(to bottom, $accent-1 0%, $accent-2 100%);
+    background: linear-gradient(to bottom, $accent-1, $accent-2);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
