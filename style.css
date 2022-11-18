@@ -24,7 +24,7 @@ h1 {
   background-color: #E9E7AF;
   color: #214159;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Varta", sans-serif;
   font-weight: bold;
 }
@@ -33,7 +33,7 @@ h2 {
   background-color: #E9E7AF;
   color: #214159;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: "Varta", sans-serif;
   font-weight: bold;
 }
@@ -51,8 +51,7 @@ h1, h2, h3 {
   width: 100%;
   margin-top: 0px;
   font-family: "Varta", sans-serif;
-  font-size: 100px;
-  background: linear-gradient(to bottom, #E9E7AF 0%, #FCA65F 100%);
+  background: linear-gradient(to bottom, #E9E7AF, #FCA65F);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -79,7 +78,7 @@ header {
 }
 
 #zen-intro {
-  background-image: url(/ZenGardenLogo2AltFont.png);
+  background-image: url(./ZenGardenLogo2AltFont.png);
   background-repeat: no-repeat;
   display: block;
 }
@@ -99,7 +98,7 @@ header {
 
 body {
   background-color: #214159;
-  background-image: linear-gradient(to bottom right, #214159, #BBD7F2, #E9E7AF, #FCA65F);
+  background-image: linear-gradient(to bottom right, #214159 20%, #BBD7F2, #E9E7AF, #FCA65F);
 }
 
 /*# sourceMappingURL=style.css.map */
