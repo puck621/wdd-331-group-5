@@ -8,10 +8,12 @@ $accent-1: #E9E7AF;
 $accent-2: #FCA65F;
 
 // fonts
-$font-sans: 'Varta', sans-serif;
-$font-serif: 'Vidaloka', serif;
+$font-sans: 'Varta',
+sans-serif;
+$font-serif: 'Vidaloka',
+serif;
 
- // media query variables
+// media query variables
 $media-min: 480px;
 $media-med: 960px;
 $media-max: 1260px;
@@ -22,6 +24,7 @@ $media-max: 1260px;
         @content;
     }
 }
+
 @mixin medium {
     @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
         @content;
@@ -32,6 +35,11 @@ $media-max: 1260px;
 a {
     font-family: $font-serif;
     text-decoration: none;
+    color: $accent-2;
+}
+
+a:hover {
+    color: $accent-1;
 }
 
 ul {
@@ -43,30 +51,35 @@ ul {
 
 p {
     font-family: $font-serif;
-    color:$dark-main;
-    background-color:$light-main;
     padding: 0;
-    }
+}
 
 
 
 //Heading styles
 h1 {
-    background-color:$accent-1;
-    color:$dark-main;
+    color: $dark-main;
     text-align: center;
-  font: {
+    width: 100%;
+    margin-top: 0px;
+    font-family: "Varta", sans-serif;
+    background: linear-gradient(to top, $accent-1, $accent-2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+
+    font: {
         size: 3rem;
         family: $font-sans;
         weight: bold;
-        
     }
 }
- 
- h2 {
-    background-color:$accent-1;
-    color:$dark-main;
+
+h2 {
     text-align: center;
+
     font: {
         size: 2.25rem;
         family: $font-sans;
@@ -75,9 +88,8 @@ h1 {
 }
 
 h3 {
-    background-color:$accent-1;
-    color:$dark-main;
     text-align: center;
+
     font: {
         size: 1.5rem;
         family: $font-sans;
@@ -85,7 +97,8 @@ h3 {
     }
 }
 
-h1, h2, h3 {
+h2,
+h3 {
     width: 100%;
     margin-top: 0px;
     font-family: "Varta", sans-serif;
@@ -95,4 +108,4 @@ h1, h2, h3 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: -20px;
-  }
+}

@@ -1,10 +1,16 @@
 /*"Add variables to that file with your chosen colors and fonts 
 (https://byui-cit.github.io/advcss/modules/req/zen-1-prove.html)."*/
 @import url("https://fonts.googleapis.com/css2?family=Varta&family=Vidaloka&display=swap");
+
 /* Links */
 a {
   font-family: "Vidaloka", serif;
   text-decoration: none;
+  color: #FCA65F;
+}
+
+a:hover {
+  color: #E9E7AF;
 }
 
 ul {
@@ -15,23 +21,27 @@ ul {
 
 p {
   font-family: "Vidaloka", serif;
-  color: #214159;
-  background-color: #E4ECF1;
   padding: 0;
 }
 
 h1 {
-  background-color: #E9E7AF;
   color: #214159;
   text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  font-family: "Varta", sans-serif;
+  background: linear-gradient(to top, #E9E7AF, #FCA65F);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
   font-size: 3rem;
   font-family: "Varta", sans-serif;
   font-weight: bold;
 }
 
 h2 {
-  background-color: #E9E7AF;
-  color: #214159;
   text-align: center;
   font-size: 2.25rem;
   font-family: "Varta", sans-serif;
@@ -39,15 +49,14 @@ h2 {
 }
 
 h3 {
-  background-color: #E9E7AF;
-  color: #214159;
   text-align: center;
   font-size: 1.5rem;
   font-family: "Varta", sans-serif;
   font-weight: bold;
 }
 
-h1, h2, h3 {
+h2,
+h3 {
   width: 100%;
   margin-top: 0px;
   font-family: "Varta", sans-serif;
@@ -59,7 +68,8 @@ h1, h2, h3 {
   margin-bottom: -20px;
 }
 
-aside {
+.wrapper,
+h3.wrapper {
   width: 130px;
   position: fixed;
   z-index: 1;
@@ -68,13 +78,17 @@ aside {
   height: 100%;
   background: #214159;
   overflow-x: scroll;
-  padding: 8px 0;
-  font-size: 2vw;
+  padding: 8px 0px;
+  font-size: 12px;
+  text-align: left;
 }
 
 header {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  margin-left: 140px;
+  max-width: 960px;
 }
 
 #zen-intro {
@@ -91,12 +105,13 @@ header {
 }*/
 [role=article] {
   padding: 0 10px;
-  margin-left: 140px;
+  margin-left: 150px;
   max-width: 960px;
+  background-color: rgba(33, 65, 89, 0.5019607843);
+  color: #BBD7F2;
 }
 
 body {
-  background-color: #214159;
   background-image: linear-gradient(to bottom right, #214159 20%, #BBD7F2, #E9E7AF, #FCA65F);
 }
 

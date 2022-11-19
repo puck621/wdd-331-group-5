@@ -6,10 +6,13 @@ $accent-1: #E9E7AF;
 $accent-2: #FCA65F;
 
 // fonts
-$font-sans: 'Varta', sans-serif;
-$font-serif: 'Vidaloka', serif;
+$font-sans: 'Varta',
+sans-serif;
+$font-serif: 'Vidaloka',
+serif;
 
-aside {
+.wrapper,
+h3.wrapper {
   width: 130px;
   position: fixed;
   z-index: 1;
@@ -18,12 +21,13 @@ aside {
   height: 100%;
   background: $dark-main;
   overflow-x: scroll;
-  padding: 8px 0;
-  font-size: 2vw;
+  padding: 8px 0px;
+  font-size: 12px;
+  text-align: left;
 }
 
 
- // media query variables
+// media query variables
 $media-min: 480px;
 $media-med: 960px;
 $media-max: 1260px;
@@ -32,18 +36,29 @@ $media-max: 1260px;
 
 @mixin small {
   @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
-      @content;
+    @content;
   }
 }
+
 @mixin medium {
   @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
-      @content;
+    @content;
   }
 }
 
- // positioning
+// positioning
 
-// header {
-  
-// }
+// header
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  margin-left: 140px;
+  max-width: 960px;
+}
 
+#zen-intro {
+  background-image: url(./ZenGardenLogo2AltFont.png);
+  background-repeat: no-repeat;
+  display: block;
+}
