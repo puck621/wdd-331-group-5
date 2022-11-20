@@ -1,17 +1,10 @@
 //Must have 5 atoms
-// @use 'variables' as variables;
-// colors
-$dark-main: #214159;
-$pale-main: #BBD7F2;
-$light-main: #E4ECF1;
-$accent-1: #E9E7AF;
-$accent-2: #FCA65F;
-
-// fonts
-$font-sans: 'Varta',
-sans-serif;
-$font-serif: 'Vidaloka',
-serif;
+@use 'variables' as *;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 // media query variables
 $media-min: 480px;
@@ -33,7 +26,7 @@ $media-max: 1260px;
 
 /* Links */
 a {
-    font-family: $font-serif;
+    font-family: $serif-font;
     text-decoration: none;
     color: $accent-2;
 }
@@ -43,14 +36,14 @@ a:hover {
 }
 
 ul {
-    font-family: $font-serif;
+    font-family: $serif-font;
     color: $accent-2;
     list-style: none;
 
 }
 
 p {
-    font-family: $font-serif;
+    font-family: $serif-font;
     padding: 0;
 }
 
@@ -62,7 +55,6 @@ h1 {
     text-align: center;
     width: 100%;
     margin-top: 0px;
-    font-family: "Varta", sans-serif;
     background: linear-gradient(to top, $accent-1, $accent-2);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -72,7 +64,7 @@ h1 {
 
     font: {
         size: 3rem;
-        family: $font-sans;
+        family: $san-font;
         weight: bold;
     }
 }
@@ -82,7 +74,7 @@ h2 {
 
     font: {
         size: 2.25rem;
-        family: $font-sans;
+        family: $san-font;
         weight: bold;
     }
 }
@@ -92,7 +84,7 @@ h3 {
 
     font: {
         size: 1.5rem;
-        family: $font-sans;
+        family: $san-font;
         weight: bold;
     }
 }
@@ -100,12 +92,11 @@ h3 {
 h2,
 h3 {
     width: 100%;
-    margin-top: 0px;
-    font-family: "Varta", sans-serif;
+    margin-top: 20px;
     background: linear-gradient(to bottom, $accent-1, $accent-2);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: -20px;
+    //margin-bottom: -20px;
 }

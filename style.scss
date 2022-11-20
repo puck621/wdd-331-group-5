@@ -1,14 +1,4 @@
-@use 'atoms' as atoms;
-@use 'molecules' as molecules;
-@use 'organisms' as organisms;
-@use 'variables' as variables;
-
-
-
-
-
-
-
-
-
-
+@use 'atoms';
+@use 'molecules';
+@use 'organisms';
+@use 'variables' as *;

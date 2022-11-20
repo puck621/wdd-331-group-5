@@ -1,6 +1,11 @@
 /*"Add variables to that file with your chosen colors and fonts 
 (https://byui-cit.github.io/advcss/modules/req/zen-1-prove.html)."*/
 @import url("https://fonts.googleapis.com/css2?family=Varta&family=Vidaloka&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Links */
 a {
@@ -29,7 +34,6 @@ h1 {
   text-align: center;
   width: 100%;
   margin-top: 0px;
-  font-family: "Varta", sans-serif;
   background: linear-gradient(to top, #E9E7AF, #FCA65F);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -58,14 +62,12 @@ h3 {
 h2,
 h3 {
   width: 100%;
-  margin-top: 0px;
-  font-family: "Varta", sans-serif;
+  margin-top: 20px;
   background: linear-gradient(to bottom, #E9E7AF, #FCA65F);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: -20px;
 }
 
 .wrapper,

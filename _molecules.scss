@@ -1,16 +1,4 @@
-// colors
-$dark-main: #214159;
-$pale-main: #BBD7F2;
-$light-main: #E4ECF1;
-$accent-1: #E9E7AF;
-$accent-2: #FCA65F;
-
-// fonts
-$font-sans: 'Varta',
-sans-serif;
-$font-serif: 'Vidaloka',
-serif;
-
+@use 'variables' as *;
 .wrapper,
 h3.wrapper {
   width: 130px;

@@ -1,17 +1,5 @@
-// colors
-$dark-main: #214159;
-$pale-main: #BBD7F2;
-$light-main: #E4ECF1;
-$accent-1: #E9E7AF;
-$accent-2: #FCA65F;
-
-// fonts
-$font-sans: 'Varta',
-sans-serif;
-$font-serif: 'Vidaloka',
-serif;
-
 // media query variables
+@use 'variables' as *;
 $media-min: 480px;
 $media-med: 960px;
 $media-max: 1260px;
