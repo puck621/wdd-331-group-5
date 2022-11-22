@@ -55,7 +55,7 @@ h1 {
     text-align: center;
     width: 100%;
     margin-top: 0px;
-    background: linear-gradient(to top, $accent-1, $accent-2);
+    background-image: linear-gradient(to top, $accent-1, $accent-2);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -70,9 +70,15 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
+    background-image: linear-gradient(to top, $accent-1, $accent-2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     font: {
+        color: $dark-main;
         size: 2.25rem;
         family: $san-font;
         weight: bold;
@@ -80,8 +86,12 @@ h2 {
 }
 
 h3 {
-    text-align: center;
-
+    text-align: left;
+    background: linear-gradient(to top, $accent-1, $accent-2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font: {
         size: 1.5rem;
         family: $san-font;

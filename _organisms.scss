@@ -28,9 +28,9 @@ $media-max: 1260px;
 
 [role=article] {
     padding: 0 10px;
-    margin-left: 150px;
+    margin-left: 250px;
     max-width: 960px;
-    background-color: #21415980;
+    background-color: $dark-main;
     color: $pale-main;
 }
 

@@ -1,17 +1,16 @@
 @use 'variables' as *;
-.wrapper,
-h3.wrapper {
-  width: 130px;
+.wrapper {
+  width: 170px;
   position: fixed;
   z-index: 1;
   top: 10em;
   left: 10px;
-  height: 100%;
   background: $dark-main;
-  overflow-x: scroll;
   padding: 8px 0px;
+  &h3{
   font-size: 12px;
   text-align: left;
+  }
 }
 
 
