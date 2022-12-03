@@ -1,4 +1,30 @@
+// media query variables
 @use 'variables' as *;
+$media-min: 480px;
+$media-med: 960px;
+$media-max: 1260px;
+
+// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
+@mixin small {
+    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+        background: green;
+    }
+}
+
+@mixin medium {
+    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
+        background: yellow;
+    }
+}
+
+@mixin large {
+        @media (min-width: #{$media-max}) {
+
+        background: red;
+        }
+
+}
+
 .wrapper {
   width: 170px;
   position: fixed;
@@ -6,7 +32,7 @@
   top: 10em;
   left: 10px;
   background: $dark-main;
-  padding: 8px 0px;
+  padding: 8px 5px;
   &h3{
   font-size: 12px;
   text-align: left;
@@ -14,34 +40,27 @@
 }
 
 
-// media query variables
-$media-min: 480px;
-$media-med: 960px;
-$media-max: 1260px;
-
-// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-
-@mixin small {
-  @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
-    @content;
-  }
-}
-
 // positioning
 
 // header
 header {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 20px;
-  margin-left: 140px;
   max-width: 960px;
+}
+
+header h1 {
+  margin-left: 120px;
+}
+
+header h2 {
+  margin-left: 175px;
+}
+
+#zen-preamble h3,
+#zen-supporting h3 {
+  margin-left: -50px;
+  padding-bottom: 10px;
+  
 }
 
 #zen-intro {

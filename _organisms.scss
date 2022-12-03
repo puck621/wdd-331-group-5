@@ -1,23 +1,4 @@
-// media query variables
 @use 'variables' as *;
-$media-min: 480px;
-$media-med: 960px;
-$media-max: 1260px;
-
-// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@mixin small {
-    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
-        @content;
-    }
-}
-
-@mixin medium {
-    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
-        @content;
-    }
-}
-
-// positioning
 
 /*#css-zen-garden {
     max-width: 960px;
@@ -27,13 +8,19 @@ $media-max: 1260px;
 }*/
 
 [role=article] {
-    padding: 0 10px;
     margin-left: 250px;
     max-width: 960px;
-    background-color: $dark-main;
+    //background-color: $dark-main;
     color: $pale-main;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, $dark-main 20%, $pale-main, $accent-1, $accent-2);
+[role=article] p{
+    padding: 8px;
+    background-color: $dark-main;
 }
+
+
+body {
+    background-image: linear-gradient(to bottom right, $dark-main 20%, $med-main, $accent-1, $accent-2);
+}
+
