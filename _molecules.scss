@@ -1,31 +1,29 @@
 // media query variables
 @use 'variables' as *;
-$media-min: 480px;
-$media-med: 960px;
-$media-max: 1260px;
 
-// /* Media queries - with help from https://css-tricks.com/approaches-media-queries-sass/ */
-@mixin small {
-    @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
-        background: green;
-    }
-}
 
-@mixin medium {
-    @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
-        background: yellow;
-    }
-}
-
-@mixin large {
-        @media (min-width: #{$media-max}) {
-
-        background: red;
-        }
-
-}
 
 .wrapper {
+  //Small responsive width
+  @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+    background: $dark-main;
+    text-align: center;
+
+    h3 {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .design-name {
+      display: inline-grid;
+        grid-template-columns: 70px 70px;
+        grid-template-rows: 1fr;
+      }
+
+  }
+
+//Medium responsive width
+  @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
   width: 170px;
   position: fixed;
   z-index: 1;
@@ -39,8 +37,22 @@ $media-max: 1260px;
   }
 }
 
+  //Large responsive width
+  @media (min-width: #{$media-max}) {
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 10em;
+  left: 10px;
+  background: $dark-main;
+  padding: 8px 5px;
+  &h3{
+  font-size: 12px;
+  text-align: left;
+  }
+}
+}
 
-// positioning
 
 // header
 header {
@@ -49,17 +61,40 @@ header {
 }
 
 header h1 {
+  @media (min-width: #{$media-med}) {
   margin-left: 120px;
+}
 }
 
 header h2 {
+  @media (min-width: #{$media-med}) {
   margin-left: 175px;
+  }
 }
 
+// footer
+footer {
+  padding: 20px;
+  text-align: center;
+  a {
+  font-family: $serif-font;
+  text-decoration: none;
+  color: $dark-main;
+  }
+}
+
+// ArticleS
 #zen-preamble h3,
 #zen-supporting h3 {
-  margin-left: -50px;
-  padding-bottom: 10px;
+  @media (min-width:#{$media-min}) and (max-width: #{$media-med}) {
+    margin-left: 0px;
+   }
+
+   @media (min-width: #{$media-med}) {
+    margin-left: -50px;
+    padding-bottom: 10px;
+   }
+
   
 }
 
@@ -68,3 +103,5 @@ header h2 {
   background-repeat: no-repeat;
   display: block;
 }
+
+
