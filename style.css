@@ -172,12 +172,6 @@ footer a {
   display: block;
 }
 
-/*#css-zen-garden {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: $dark-main;
-    color: $light-main;
-}*/
 [role=article] {
   margin-left: 250px;
   max-width: 960px;
@@ -193,11 +187,6 @@ body {
   background-image: linear-gradient(to bottom right, #214159 20%, #8397ab, #E9E7AF, #FCA65F);
 }
 
-/*  //content layout
-  .main-supporting {
-    display: flex;
-    flex-wrap: nowrap;
-  }*/
 @media (min-width: 480px) and (max-width: 960px) {
   .intro {
     grid-area: intro;
@@ -243,13 +232,13 @@ body {
   }
 }
 @media (min-width: 960px) and (max-width: 1260px) {
-  .intro {
+  #zen-intro {
     grid-area: intro;
   }
-  .summary {
+  #zen-summary {
     grid-area: summary;
   }
-  .preamble {
+  #zen-preamble {
     grid-area: preamble;
   }
   #zen-explanation {
@@ -272,9 +261,13 @@ body {
   }
   .page-wrapper {
     display: grid;
-    grid-template-columns: 200px 100px auto;
+    grid-template-columns: 180px 100px auto;
     grid-template-areas: "intro intro intro" ". . summary" ". . preamble" ". . explanation" ". . participation" ". . benefits" ". . requirements" "footer footer footer";
     padding: 0 20px 0 0;
+  }
+  .page-wrapper .wrapper {
+    margin-left: 0px;
+    padding: 20px;
   }
   /*.page-wrapper {
      display: inline-grid;

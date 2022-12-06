@@ -1,11 +1,5 @@
 @use 'variables' as *;
 
-/*#css-zen-garden {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: $dark-main;
-    color: $light-main;
-}*/
 
 [role=article] {
     margin-left: 250px;
@@ -24,12 +18,6 @@ body {
 }
 
  
-/*  //content layout
-  .main-supporting {
-    display: flex;
-    flex-wrap: nowrap;
-  }*/
-
 //Grid layout
 
 //Small responsive grid
@@ -76,9 +64,9 @@ body {
  
 //Medium responsive grid
 @media (min-width: 960px) and (max-width: 1260px) {
-    .intro { grid-area: intro; }
-    .summary { grid-area: summary; }
-    .preamble{ grid-area: preamble; }
+    #zen-intro { grid-area: intro; }
+    #zen-summary { grid-area: summary; }
+    #zen-preamble{ grid-area: preamble; }
     #zen-explanation{ grid-area: explanation; }
     #zen-participation{ grid-area: participation; }
     #zen-benefits{ grid-area: benefits; }
@@ -88,7 +76,7 @@ body {
    
     .page-wrapper {
         display: grid;
-        grid-template-columns: 200px 100px auto;
+        grid-template-columns: 180px 100px auto;
         grid-template-areas: 
             'intro intro intro'
             '. . summary'
@@ -98,7 +86,16 @@ body {
             '. . benefits'
             '. . requirements'
             'footer footer footer';
-        padding: 0 20px 0 0;      
+        padding: 0 20px 0 0;     
+        
+        
+
+       
+
+           .wrapper {
+               margin-left: 0px;
+               padding: 20px;
+             }
     }
 
 
