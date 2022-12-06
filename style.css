@@ -253,6 +253,9 @@ body {
   #zen-requirements {
     grid-area: requirements;
   }
+  #zen-supporting {
+    grid-column: 1/4;
+  }
   .wrapper {
     grid-area: wrapper;
   }
@@ -270,8 +273,45 @@ body {
     padding: 20px;
   }
 }
-/*@media (min-width: 1260px) {
+@media (min-width: 1260px) {
+  #zen-intro {
+    grid-area: intro;
+  }
+  #zen-summary {
+    grid-area: summary;
+  }
+  #zen-preamble {
+    grid-area: preamble;
+  }
+  #zen-explanation {
+    grid-area: explanation;
+  }
+  #zen-participation {
+    grid-area: participation;
+  }
+  #zen-benefits {
+    grid-area: benefits;
+  }
+  #zen-requirements {
+    grid-area: requirements;
+  }
+  #zen-supporting {
+    grid-column: 1/4;
+  }
+  .wrapper {
+    grid-area: wrapper;
+  }
+  footer {
+    grid-area: footer;
+  }
   .page-wrapper {
-  }    
-
-  }*//*# sourceMappingURL=style.css.map */
+    display: grid;
+    grid-template-columns: 180px 100px auto;
+    grid-template-areas: "intro intro intro" ". . summary" ". . preamble" ". . explanation" ". . participation" ". . benefits" ". . requirements" "footer footer footer";
+    padding: 0 20px 0 0;
+  }
+  .page-wrapper .wrapper {
+    margin-left: 0px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
