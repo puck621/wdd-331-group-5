@@ -90,7 +90,7 @@ h3 {
   }
   .wrapper .design-name {
     display: inline-grid;
-    grid-template-columns: 70px 70px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
@@ -229,7 +229,17 @@ body {
   .page-wrapper {
     display: grid;
     grid-template-areas: "intro" "summary" "preamble" "explanation" "participation" "benefits" "requirements" "wrapper" "footer";
-    padding: 0 20px 0 0;
+    padding: 20px 0 0;
+  }
+  h1 {
+    margin-left: 90px;
+  }
+  [role=article] {
+    margin-left: 20px;
+  }
+  .wrapper {
+    margin-left: 0px;
+    padding: 20px;
   }
 }
 @media (min-width: 960px) and (max-width: 1260px) {

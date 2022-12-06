@@ -56,11 +56,21 @@ body {
             'requirements'
             'wrapper'
             'footer';
-        padding: 0 20px 0 0;
-        
-        
+        padding:  20px 0 0;      
     }
 
+    h1 {
+     margin-left: 90px;
+    }
+
+    [role=article] {
+        margin-left: 20px;
+      }
+
+    .wrapper {
+        margin-left: 0px;
+        padding: 20px;
+      }
   }
  
  
