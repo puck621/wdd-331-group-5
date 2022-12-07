@@ -17,6 +17,31 @@ body {
     background-image: linear-gradient(to bottom right, $dark-main 20%, $med-main, $accent-1, $accent-2);
 }
 
+// navigation sidebar
+.sidebar {
+  overflow: scroll;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  display: block;
+  & h3{
+    padding-bottom: 10px;
+  }
+  & li {
+    padding: 3px 0 3px 0;
+    & :hover {
+      transition-property: color;
+      transition-duration: 1s;
+      color: $dark-main;
+      transition-property: background-color;
+      transition-duration: 1s;
+      background-color: $accent-1;
+      font-weight: bold;
+  }
+}
+}
  
 //Grid layout
 
@@ -165,6 +190,7 @@ body {
       margin-left: 0px;
       padding: 20px;
     }
+
   } 
     
     

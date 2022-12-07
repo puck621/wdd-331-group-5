@@ -25,7 +25,7 @@
 //Medium responsive width
   @media (min-width: #{$media-med}) and (max-width: #{$media-max}) {
   width: 170px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 10em;
   left: 10px;
@@ -40,7 +40,7 @@
   //Large responsive width
   @media (min-width: #{$media-max}) {
     width: 170px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 10em;
     left: 10px;
@@ -103,5 +103,4 @@ footer {
   background-repeat: no-repeat;
   display: block;
 }
-
 

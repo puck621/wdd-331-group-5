@@ -97,7 +97,7 @@ h3 {
 @media (min-width: 960px) and (max-width: 1260px) {
   .wrapper {
     width: 170px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 10em;
     left: 10px;
@@ -112,7 +112,7 @@ h3 {
 @media (min-width: 1260px) {
   .wrapper {
     width: 170px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 10em;
     left: 10px;
@@ -185,6 +185,37 @@ footer a {
 
 body {
   background-image: linear-gradient(to bottom right, #214159 20%, #8397ab, #E9E7AF, #FCA65F);
+}
+
+.sidebar {
+  overflow: scroll;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  display: block;
+}
+.design-selection h3,
+.design-archives h3,
+.zen-resources h3 {
+  padding-bottom: 10px;
+}
+.design-selection li,
+.design-archives li,
+.zen-resources li {
+  padding: 3px 0 3px 0;
+}
+.design-selection li :hover,
+.design-archives li :hover,
+.zen-resources li :hover {
+  transition-property: color;
+  transition-duration: 1s;
+  color: #214159;
+  transition-property: background-color;
+  transition-duration: 1s;
+  background-color: #E9E7AF;
+  font-weight: bold;
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
@@ -314,4 +345,6 @@ body {
     margin-left: 0px;
     padding: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
